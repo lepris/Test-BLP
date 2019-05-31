@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 import { Button } from '../src/components/Button'
 
 
-function App({ title }) {
+class App extends Component {
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>{title}</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button>My Button component</Button>
-      </header>
-    </div>
-  );
+  render() {
+    return <div className="App" />;
+  }
 }
+
 
 App.defaultProps = {
   title: 'Just and emergency title'
