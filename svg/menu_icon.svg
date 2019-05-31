@@ -1,0 +1,41 @@
+
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="path-1" cx="18" cy="18" r="18"></circle>
+        <path d="M1.55272727,7.59272727 L14.8072727,7.59272727 C15.6206375,7.59272727 16.28,8.25208973 16.28,9.06545455 C16.28,9.87881936 15.6206375,10.5381818 14.8072727,10.5381818 L1.55272727,10.5381818 C0.739362459,10.5381818 0.08,9.87881936 0.08,9.06545455 C0.08,8.25208973 0.739362459,7.59272727 1.55272727,7.59272727 Z M1.55272727,0.72 L14.8072727,0.72 C15.6206375,0.72 16.28,1.37936246 16.28,2.19272727 C16.28,3.00609209 15.6206375,3.66545455 14.8072727,3.66545455 L1.55272727,3.66545455 C0.739362459,3.66545455 0.08,3.00609209 0.08,2.19272727 C0.08,1.37936246 0.739362459,0.72 1.55272727,0.72 Z M1.55272727,14.4654545 L14.8072727,14.4654545 C15.6206375,14.4654545 16.28,15.124817 16.28,15.9381818 C16.28,16.7515466 15.6206375,17.4109091 14.8072727,17.4109091 L1.55272727,17.4109091 C0.739362459,17.4109091 0.08,16.7515466 0.08,15.9381818 C0.08,15.124817 0.739362459,14.4654545 1.55272727,14.4654545 Z" id="path-3"></path>
+        <path d="M18,36 C8.0588745,36 0,27.9411255 0,18 C0,8.0588745 8.0588745,0 18,0 C27.9411255,0 36,8.0588745 36,18 C36,27.9411255 27.9411255,36 18,36 Z M18,35.027027 C27.4037674,35.027027 35.027027,27.4037674 35.027027,18 C35.027027,8.59623264 27.4037674,0.972972973 18,0.972972973 C8.59623264,0.972972973 0.972972973,8.59623264 0.972972973,18 C0.972972973,27.4037674 8.59623264,35.027027 18,35.027027 Z" id="path-5"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Organism/navbar" transform="translate(-5.000000, -42.000000)">
+            <g id="Menu" transform="translate(5.000000, 42.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Background"></g>
+                <g id="Background-colour" mask="url(#mask-2)" fill="#FFFFFF">
+                    <rect id="Rectangle" x="0" y="0" width="36" height="36"></rect>
+                </g>
+                <g id="Icon" mask="url(#mask-2)">
+                    <g transform="translate(10.000000, 9.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Combined-Shape" stroke="none" fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <g id="Colour/@prism-prime" stroke="none" fill="none" mask="url(#mask-4)" fill-rule="evenodd">
+                            <g transform="translate(-10.000000, -9.000000)" fill="#0C75B7" id="Rectangle">
+                                <rect x="0" y="0" width="36" height="36"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <use id="Background" fill="#979797" fill-rule="nonzero" xlink:href="#path-5"></use>
+                <g id="Colour/@prism-dark" mask="url(#mask-6)" fill="#005285">
+                    <rect id="Rectangle" x="0" y="0" width="36" height="36"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
