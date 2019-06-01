@@ -6,13 +6,13 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Welcome } from '@storybook/react/demo';
 import Button from '../components/Button';
-import MenuIcon from '../Icons/MenuIcon.js';
+import MenuIcon from '../Icons/MenuIcon';
 import App from '../App';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('MenuIcon', module)
-  .add('menu icon displays ok', ()=> (
+  .add('menu icon displays ok', () => (
     <MenuIcon width={'36px'} heighth={'36px'} />
   ))
 storiesOf('Button', module)
