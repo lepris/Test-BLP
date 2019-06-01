@@ -6,8 +6,15 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Welcome } from '@storybook/react/demo';
 import Button from '../components/Button';
-import MenuIcon from '../Icons/MenuIcon';
-import ToggleIcon from '../Icons/ToggleIcon';
+import {MenuIcon, 
+  ToggleIcon, 
+  RefreshIcon, 
+  AssignProcessIcon,
+  IncreaseRbIcon,
+  DecreaseRbIcon
+} from '../Icons/AllIcons';
+
+
 
 import App from '../App';
 
@@ -16,8 +23,13 @@ storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo(
 storiesOf('All Icons', module)
   .add('menu icon displays ok', () => (
     <>
-    <MenuIcon />
-    <ToggleIcon />
+    <MenuIcon /><br></br>
+    <RefreshIcon /><br></br>
+    <ToggleIcon /><br></br>
+    <AssignProcessIcon /><br></br>
+    <IncreaseRbIcon /><br></br>
+    <DecreaseRbIcon /><br></br>
+
     </>
 
   ))
