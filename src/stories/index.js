@@ -7,14 +7,24 @@ import { linkTo } from '@storybook/addon-links';
 import { Welcome } from '@storybook/react/demo';
 import Button from '../components/Button';
 import MenuIcon from '../Icons/MenuIcon';
+import ToggleIcon from '../Icons/ToggleIcon';
+
 import App from '../App';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
-storiesOf('MenuIcon', module)
+storiesOf('All Icons', module)
   .add('menu icon displays ok', () => (
-    <MenuIcon width={'36px'} heighth={'36px'} />
+    <>
+    <MenuIcon />
+    <ToggleIcon />
+    </>
+
   ))
+
+
+
+
 storiesOf('Button', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hell Button</Button>)
   .add('with some emoji', () => (
