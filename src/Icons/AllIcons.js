@@ -1,19 +1,19 @@
 import React from 'react';
 
-import MenuSvg from './MenuSvg';
-import ToggleSvg from './ToggleSvg';
-import RefreshSvg from './RefreshSvg';
-import AssignProcessSvg from './AssignProcessSvg';
-import IncreaseRbSvg from './IncreaseRbSvg';
-import DecreseRbSvg from './DecreseRbSvg';
+import SvgMenu from './Menu';
+import SvgToggle from './Toggle';
+import SvgRefresh from './Refresh';
+import SvgAssignProcess from './AssignProcess';
+import SvgIncreaseRb from './IncreaseRb';
+import SvgDecreseRb from './DecreseRb';
 
 
-export const MenuIcon = () => <MenuSvg/>
-export const ToggleIcon = () => <ToggleSvg/>
-export const RefreshIcon = () => <RefreshSvg/>
-export const AssignProcessIcon = () => <AssignProcessSvg/>
-export const IncreaseRbIcon = () => <IncreaseRbSvg/>
-export const DecreseRbIcon = () => <DecreseRbSvg/>
+export const MenuIcon = () => <SvgMenu />
+export const ToggleIcon = () => <SvgToggle />
+export const RefreshIcon = () => <SvgRefresh />
+export const AssignProcessIcon = () => <SvgAssignProcess />
+export const IncreaseRbIcon = () => <SvgIncreaseRb />
+export const DecreseRbIcon = () => <SvgDecreseRb />
 
 
 
