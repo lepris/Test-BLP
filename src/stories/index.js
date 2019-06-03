@@ -6,9 +6,10 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Welcome } from '@storybook/react/demo';
 import Button from '../components/Button';
-import {MenuIcon, 
-  ToggleIcon, 
-  RefreshIcon, 
+import {
+  MenuIcon,
+  ToggleIcon,
+  RefreshIcon,
   AssignProcessIcon,
   IncreaseRbIcon,
   DecreaseRbIcon,
