@@ -6,6 +6,9 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Welcome } from '@storybook/react/demo';
 import Button from '../components/Button';
+import ONavBar from '../components/ONavBar';
+import OTaskCard from '../components/OTaskCard';
+
 import {
   MenuIcon,
   ToggleIcon,
@@ -23,7 +26,7 @@ import {
 
 
 
-import App from '../App';
+
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -48,7 +51,11 @@ storiesOf('All Icons', module)
   ))
 
 
+storiesOf('ONavBar',module)
+    .add('displys ok', () => <ONavBar/>);
 
+storiesOf('OTaskCard',module)
+  .add('displys ok', () => <OTaskCard/>);
 
 storiesOf('Button', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hell Button</Button>)
@@ -67,6 +74,4 @@ storiesOf('Button', module)
   ))
   .add("disabled", () => <Button label={`continue`} active={false} ></Button>);
 
-storiesOf('App', module)
-  .add('default', () => <App />)
-  .add('title', () => <App title={'This beautiful props with title'} />);
+
