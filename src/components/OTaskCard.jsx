@@ -5,7 +5,7 @@ class TaskCard extends Component {
     render() { 
         return ( 
             <div className='task-card-wrapper'>
-
+                
             </div>
          );
     }

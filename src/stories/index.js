@@ -55,7 +55,30 @@ storiesOf('ONavBar',module)
     .add('displys ok', () => <ONavBar/>);
 
 storiesOf('OTaskCard',module)
-  .add('displys ok', () => <OTaskCard/>);
+  .add('not assigned', () => <OTaskCard 
+    procName={'Test Process Name'}
+    procDescription={'Description of this test process'}
+    assigned={false}
+    priority={0}
+    workers={0}
+    timeRemaining={'0'}
+    avgTime={'0'}
+    tasksTotal={0}
+    tasksQueue={0}
+
+  />)
+  .add('Assigned priority 1', () => <OTaskCard 
+    procName={'Test Process Name'}
+    procDescription={'Description of this test process'}
+    assigned={true}
+    priority={1}
+    workers={10}
+    timeRemaining={'01:24'}
+    avgTime={'12s'}
+    tasksTotal={10}
+    tasksQueue={6}
+    
+  />);
 
 storiesOf('Button', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hell Button</Button>)
