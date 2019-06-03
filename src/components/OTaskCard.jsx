@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import '../styles/OTaskCard.css'
+
+import {
+   
+    PlayIcon,
+    
+  } from '../Icons/AllIcons';
+
 class TaskCard extends Component {
     
     state = {  }
@@ -21,8 +28,15 @@ class TaskCard extends Component {
                     <label className=' process-name-label label-text text-inner-shadow'>Name</label>
                     <h3 className='process-name '>{procName}</h3>
                     <span>{procDescription}</span>
+                    
                 </div>
-                <div className='task-second-column'>
+                <div className='task-second-column pink-border'>
+                <h4 className='workers-assigned'>Workers assigned</h4>
+                <div className='play-pause teal-border'>
+                        <PlayIcon assigned={assigned}/>
+                </div>
+                
+                
                 </div>
             </div>
          );

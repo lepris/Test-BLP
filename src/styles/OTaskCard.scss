@@ -2,12 +2,16 @@
 
 .task-card-wrapper {
     background-image: url('../ghost_screens/Organism/tc_never_assigned.jpg');
-    background-color: rgba(255,255,255, .8);
+    background-color: rgba(255,255,255, .2);
     background-repeat: no-repeat;
+    
     margin: 35px 0px 35px 0px;
     width: 720px;
     height: 128px;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     border: $border-dark solid 1px;
     border-radius: 10px;
     
@@ -19,12 +23,35 @@
  flex-direction: column;
  justify-content: flex-start;
 }
-
 .process-name {
     margin: 0px 0px 0px 0px;
     color: $text-dgrey;
     font-weight: 400;
 
     border-bottom: $border-light solid 1px;
+}
+
+.task-second-column {
+    border-left: $border-dark solid 1px;
+    z-index: 0;
+    width: 168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.workers-assigned {
+    margin: 5px 0px 0px 0px;
+    color: $text-black;
+    font-weight: 300;
+    text-align: center;
+    
+}
+.play-pause {
+    position: relative;
+    z-index: -3;
+    right: 20px;
+    top: 20px;
 }
 
