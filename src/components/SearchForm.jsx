@@ -8,7 +8,7 @@ const SearchForm = () => {
             <div className='search-first-column'>
                 <LookingGlassIcon />
             </div>
-            <div className='search-second-column'>
+            <div className='search-second-column '>
                 <label className='label-text text-inner-shadow'>
                 Search for processes, digital workers, tags
                 </label>

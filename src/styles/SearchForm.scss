@@ -3,13 +3,25 @@
 .search-form-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding: 5px;
 }
 .search-second-column{
     display: flex;
+    width: 75%;
     flex-direction: column;
 }
+.search-first-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+
 .search-input {
-    height: 24px;
+    height: 20px;
+    width: 100%;
     border-bottom: $border-light 1px solid ;
     border-top: $border-light 0px solid ;
     border-left: $border-light 0px solid ;

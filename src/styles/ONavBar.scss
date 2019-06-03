@@ -1,13 +1,8 @@
 @import "./_theme";
 
 .nav-bar-wrapper{
-    background-image: url('../ghost_screens/Organism/navbar.png');
-    background-color: rgba(255,255,255, .8);
-    background-repeat: no-repeat;
-    // opacity: 0.2;
-
+    
     margin-top: 50px;
-    // width: 1224px;
     height: 120px;
 
     display: flex;
@@ -15,6 +10,13 @@
     align-content: center;
 
 }
+
+.nav-second-column {
+    display: flex;
+    flex-grow: 2;
+    
+}
+
 .column {
     display: flex;
     flex-direction: column;
