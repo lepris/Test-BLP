@@ -1,0 +1,27 @@
+@import "./_theme";
+
+.nav-bar-wrapper{
+    background-image: url('../ghost_screens/Organism/navbar.png');
+    background-color: rgba(255,255,255, .8);
+    background-repeat: no-repeat;
+    // opacity: 0.2;
+
+    margin-top: 50px;
+    // width: 1224px;
+    height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+}
+
+
+
+
