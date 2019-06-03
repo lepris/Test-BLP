@@ -1,0 +1,38 @@
+
+<svg width="37px" height="36px" viewBox="0 0 37 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="path-1" cx="18.5" cy="18" r="18"></circle>
+        <polygon id="path-3" points="8.18 0.52 15.56 13.48 0.8 13.48"></polygon>
+        <path d="M18.5,36 C8.5588745,36 0.5,27.9411255 0.5,18 C0.5,8.0588745 8.5588745,0 18.5,0 C28.4411255,0 36.5,8.0588745 36.5,18 C36.5,27.9411255 28.4411255,36 18.5,36 Z M18.5,35.027027 C27.9037674,35.027027 35.527027,27.4037674 35.527027,18 C35.527027,8.59623264 27.9037674,0.972972973 18.5,0.972972973 C9.09623264,0.972972973 1.47297297,8.59623264 1.47297297,18 C1.47297297,27.4037674 9.09623264,35.027027 18.5,35.027027 Z" id="path-5"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="path-1" transform="translate(18.500000, 18.000000) rotate(-270.000000) translate(-18.500000, -18.000000) "></g>
+        <g id="atom/icon/play" mask="url(#mask-2)">
+            <g transform="translate(18.500000, 18.000000) rotate(-270.000000) translate(-18.500000, -18.000000) translate(10.500000, 11.000000)" id="Colour/@prism-charcoal-Clipped">
+                <g transform="translate(0.000000, -0.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="path-3"></g>
+                    <g id="Colour/@prism-charcoal" mask="url(#mask-4)" fill="#434A50">
+                        <g transform="translate(-10.000000, -11.000000)" id="Rectangle-Copy">
+                            <rect x="0" y="0" width="36" height="36"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <mask id="mask-6" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <g id="path-5" transform="translate(18.500000, 18.000000) rotate(-270.000000) translate(-18.500000, -18.000000) "></g>
+        <g id="Colour/@prism-charcoal" mask="url(#mask-6)" fill="#434A50">
+            <g transform="translate(18.500000, 18.000000) rotate(-270.000000) translate(-18.500000, -18.000000) translate(0.500000, 0.000000)" id="Rectangle-Copy">
+                <rect x="0" y="0" width="36" height="36"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

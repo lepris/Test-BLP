@@ -1,0 +1,14 @@
+
+<svg width="258px" height="142px" viewBox="0 0 258 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M123,10 L128,0 L133,10 L246,10 C251.522847,10 256,14.4771525 256,20 L256,128 C256,133.522847 251.522847,138 246,138 L10,138 C4.4771525,138 6.76353751e-16,133.522847 0,128 L0,20 C-6.76353751e-16,14.4771525 4.4771525,10 10,10 L123,10 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dropdown-arrow" transform="translate(1.000000, 3.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <path stroke="#005285" d="M122.690983,9.5 L128,-1.11803399 L133.309017,9.5 L246,9.5 C251.79899,9.5 256.5,14.2010101 256.5,20 L256.5,128 C256.5,133.79899 251.79899,138.5 246,138.5 L10,138.5 C4.20101013,138.5 -0.5,133.79899 -0.5,128 L-0.5,20 C-0.5,14.2010101 4.20101013,9.5 10,9.5 L122.690983,9.5 Z"></path>
+        </g>
+    </g>
+</svg>

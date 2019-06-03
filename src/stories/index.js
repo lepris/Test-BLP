@@ -11,7 +11,13 @@ import {MenuIcon,
   RefreshIcon, 
   AssignProcessIcon,
   IncreaseRbIcon,
-  DecreaseRbIcon
+  DecreaseRbIcon,
+  PlayIcon,
+  StarOffIcon,
+  StarOnIcon,
+  LookingGlassIcon,
+  DropMenuBlIcon,
+  DropMenuWhtIcon
 } from '../Icons/AllIcons';
 
 
@@ -29,6 +35,12 @@ storiesOf('All Icons', module)
     <AssignProcessIcon /><br></br>
     <IncreaseRbIcon /><br></br>
     <DecreaseRbIcon /><br></br>
+    <PlayIcon /><br></br>
+    <StarOnIcon /><br></br>
+    <StarOffIcon /><br></br>
+    <LookingGlassIcon /><br></br>
+    <DropMenuBlIcon /><br></br>
+    <DropMenuWhtIcon /><br></br>
 
     </>
 
