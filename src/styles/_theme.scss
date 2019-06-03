@@ -4,7 +4,9 @@ $prism-light: #D0EDFF;
 $prism-prime: #0C75B7;
 $prism-yellow: #FFCE2B;
 $text-lgrey: #D4D4D4;
+$text-dgrey: #5d5d5d;
 $border-light: #D8D8D8;
+$border-dark: #979797;
 
 
 .prism-border {
@@ -42,4 +44,9 @@ text-align: left;
      -moz-background-clip: text;
           background-clip: text;
 
+}
+
+//Global shadow
+.frame-box-shadow {
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
 }

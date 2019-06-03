@@ -1,3 +1,5 @@
+@import "./_theme";
+
 .task-card-wrapper {
     background-image: url('../ghost_screens/Organism/tc_never_assigned.jpg');
     background-color: rgba(255,255,255, .8);
@@ -5,4 +7,24 @@
     margin: 35px 0px 35px 0px;
     width: 720px;
     height: 128px;
+
+    border: $border-dark solid 1px;
+    border-radius: 10px;
+    
 }
+
+.task-first-column {
+ padding: 5px 0px 0px 15px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+}
+
+.process-name {
+    margin: 0px 0px 0px 0px;
+    color: $text-dgrey;
+    font-weight: 400;
+
+    border-bottom: $border-light solid 1px;
+}
+
