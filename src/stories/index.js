@@ -9,7 +9,7 @@ import App from '../App';
 import ONavBar from '../components/ONavBar';
 import OTaskCard from '../components/OTaskCard';
 import ProgressBar from '../components/ProgressBar';
-
+import AssignDropMenu from '../components/AssignDropMenu';
 import {
   MenuIcon,
   ToggleIcon,
@@ -40,6 +40,9 @@ storiesOf('App', module)
     tasksTotal={0}
     tasksQueue={0}
   />);
+
+storiesOf('Assign Drop Menu', module)
+  .add('Assign drop', () => <AssignDropMenu />)
 
 storiesOf('ONavBar', module)
   .add('displays ok', () => <ONavBar />);
