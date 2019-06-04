@@ -93,6 +93,21 @@
     font-size: 1.2em;
 }
 
+.details-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.details-bar-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   margin-bottom: 5px;
+}
+
+
 
 
 

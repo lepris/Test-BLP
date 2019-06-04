@@ -10,6 +10,7 @@ import {
     PauseProcessIcon,
     ToggleIcon,
 } from '../Icons/AllIcons';
+import ProgressBar from '../components/ProgressBar';
 
 class TaskCard extends Component {
 
@@ -33,12 +34,14 @@ class TaskCard extends Component {
                     <label className=' process-name-label label-text text-inner-shadow'>Name</label>
                     <h3 className='process-name '>{procName}</h3>
                     <span>{procDescription}</span>
-                    {assigned
-                        ? details
-                            ? <span><ToggleIcon />{`detailed info ${tasksQueue} ${tasksTotal} ${avgTime} ${timeRemaining}`}</span>
-                            : <span><ToggleIcon /> progress bar</span>
-                        : null
-                    }
+                    <div className='details-wrapper pink-border'>
+                        {assigned
+                            ? details
+                                ? <span><ToggleIcon />{`detailed info ${tasksQueue} ${tasksTotal} ${avgTime} ${timeRemaining}`}</span>
+                                : <div className='details-bar-bar teal-border'><ToggleIcon /> <ProgressBar tasksTotal={tasksTotal} tasksQueue={tasksQueue} /></div>
+                            : null
+                        }
+                    </div>
                 </div>
 
 
