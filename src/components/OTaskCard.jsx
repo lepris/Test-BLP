@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import '../styles/OTaskCard.css'
 
 import {
-   
+    IncreaseRbIcon,
+    DecreaseRbIcon,
     PlayIcon,
-    
   } from '../Icons/AllIcons';
 
 class TaskCard extends Component {
@@ -31,9 +31,23 @@ class TaskCard extends Component {
                     
                 </div>
                 <div className='task-second-column pink-border'>
-                <h4 className='workers-assigned'>Workers assigned</h4>
-                <div className='play-pause teal-border'>
+                <div className='play-pause'>
                         <PlayIcon assigned={assigned}/>
+                </div>
+                <h4 className='workers-assigned'>Workers assigned</h4>
+                
+                <div className='workers-wrapper pink-border'>
+                    <div className='plus-minus teal-border'>
+                    <DecreaseRbIcon />
+                    </div>
+                        <span className='workers-number orange-border'>
+                        
+                        {workers}/25
+                       
+                        </span>
+                    <div className='plus-minus teal-border'>
+                    <IncreaseRbIcon /> 
+                    </div>
                 </div>
                 
                 
