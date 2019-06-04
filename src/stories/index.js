@@ -3,11 +3,10 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
-
-import { Welcome } from '@storybook/react/demo';
 import Button from '../components/Button';
 import ONavBar from '../components/ONavBar';
 import OTaskCard from '../components/OTaskCard';
+import ProgressBar from '../components/ProgressBar';
 
 import {
   MenuIcon,
@@ -25,31 +24,6 @@ import {
   DropMenuWhtIcon,
   PriorityIcon
 } from '../Icons/AllIcons';
-
-
-
-
-
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
-storiesOf('Priority Icon priority of props', module)
-  .add('task priority of 0', () => <PriorityIcon priority={0} />)
-  .add('task priority of 1', () => <PriorityIcon priority={1} />)
-  .add('task priority of 2', () => <PriorityIcon priority={2} />)
-  .add('task priority of 3', () => <PriorityIcon priority={3} />)
-storiesOf('All Icons', module)
-  .add('menu icon displays ok', () => (
-    <>
-      <MenuIcon /><RefreshIcon /><ToggleIcon /><PlayIcon /><PauseProcessIcon /><br></br>
-      <AssignProcessIcon /><br></br>
-      <IncreaseRbIcon /><DecreaseRbIcon /><br></br>
-      <br></br>
-      <StarOnIcon /><StarOffIcon /><br></br>
-      <LookingGlassIcon /><br></br>
-      <DropMenuBlIcon /> <DropMenuWhtIcon /><br></br>
-
-    </>
-
-  ))
 
 
 storiesOf('ONavBar', module)
@@ -95,7 +69,35 @@ storiesOf('OTaskCard', module)
     tasksQueue={6}
 
   />);
+storiesOf('Progress Bar', module)
+  .add('status 100%', () => <ProgressBar tasksTotal={10} tasksQueue={10} />)
+  .add('status 10%', () => <ProgressBar tasksTotal={10} tasksQueue={9} />)
+  .add('status 1%', () => <ProgressBar tasksTotal={100} tasksQueue={99} />)
+  .add('status 9%', () => <ProgressBar tasksTotal={100} tasksQueue={91} />)
+  .add('status 50%', () => <ProgressBar tasksTotal={10} tasksQueue={5} />)
 
+
+storiesOf('Priority Icon priority of props', module)
+  .add('task priority of 0', () => <PriorityIcon priority={0} />)
+  .add('task priority of 1', () => <PriorityIcon priority={1} />)
+  .add('task priority of 2', () => <PriorityIcon priority={2} />)
+  .add('task priority of 3', () => <PriorityIcon priority={3} />)
+
+storiesOf('All Icons', module)
+  .add('menu icon displays ok', () => (
+    <>
+      <MenuIcon /><RefreshIcon /><ToggleIcon /><PlayIcon /><PauseProcessIcon /><br></br>
+      <AssignProcessIcon /><br></br>
+      <IncreaseRbIcon /><DecreaseRbIcon /><br></br>
+      <br></br>
+      <StarOnIcon /><StarOffIcon /><br></br>
+      <LookingGlassIcon /><br></br>
+      <DropMenuBlIcon /> <DropMenuWhtIcon /><br></br>
+
+    </>
+
+  ))
+// EXAMPLE
 storiesOf('Button', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hell Button</Button>)
   .add('with some emoji', () => (
