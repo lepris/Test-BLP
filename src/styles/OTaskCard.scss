@@ -108,8 +108,18 @@
    margin-bottom: 5px;
 }
 .progress-blur {
-  
+    width: 466px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px 4px 10px 4px;
+    margin-left: 5px;
+    background-image: linear-gradient(to right, $prism-dark , $prism-light);
     
+    font-size: .8em;
+    font-weight: 400;
+    text-align: left;
+    line-height: .9em;
 }
 
 
