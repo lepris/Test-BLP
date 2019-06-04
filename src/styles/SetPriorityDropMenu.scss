@@ -1,0 +1,40 @@
+@import "./_theme";
+
+.priority-drop-menu-wrapper {
+    display: flex;
+    width: 258px;
+    height: 138px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;  
+}
+.heading {
+    height: 54px;
+    font-size: 1.4em;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../svg/drop_menu_wht.svg');
+    background-repeat: no-repeat;
+
+    color: $prism-prime;
+}
+
+.three-star-buttons{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    border-left: $prism-dark solid 1px;
+    border-right: $prism-dark solid 1px;
+    border-bottom: $prism-dark solid 1px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.star-button {
+    width: 72px;
+    width: 72px;
+    background-image: url('../../svg/star_off.svg');
+    background-size: cover;
+}

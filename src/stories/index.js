@@ -10,6 +10,8 @@ import ONavBar from '../components/ONavBar';
 import OTaskCard from '../components/OTaskCard';
 import ProgressBar from '../components/ProgressBar';
 import AssignDropMenu from '../components/AssignDropMenu';
+import SetPriorityDropMenu from '../components/SetPriorityDropMenu';
+
 import {
   MenuIcon,
   ToggleIcon,
@@ -42,7 +44,10 @@ storiesOf('App', module)
   />);
 
 storiesOf('Assign Drop Menu', module)
-  .add('Assign drop', () => <AssignDropMenu />)
+  .add('Assign drop', () => <AssignDropMenu />);
+
+storiesOf('Set Priority Drop Menu', module)
+  .add('Set Priority drop menu', () => <SetPriorityDropMenu />);
 
 storiesOf('ONavBar', module)
   .add('displays ok', () => <ONavBar />);
