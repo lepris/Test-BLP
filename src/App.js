@@ -1,27 +1,36 @@
 import React, { Component } from "react";
 import "./App.css";
-
+import ONavBar from './components/ONavBar';
+import OTaskCard from './components/OTaskCard';
 class App extends Component {
-
+  state = {
+    tasks: [1, 2, 3]
+  }
   render() {
+    const { tasks } = this.state;
     return (
-    
-    <div className='App' >
-      <div className='main-column'>
-        <nav>
 
-        </nav>
-        <div className='task-list'>
+      <div className='App' >
+
+
+        <ONavBar />
+
+
+
+        <div className='middle'>
+          {tasks.map(task => <OTaskCard procName={task} procDescription={'This test Description'} />)}
+
+
+
+
         </div>
-      </div>
 
-    </div>
+
+      </div>
     )
   }
 }
 
 
-App.defaultProps = {
-  title: 'Just and emergency title'
-}
+
 export default App;

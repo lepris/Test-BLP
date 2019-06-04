@@ -4,6 +4,8 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import Button from '../components/Button';
+
+import App from '../App';
 import ONavBar from '../components/ONavBar';
 import OTaskCard from '../components/OTaskCard';
 import ProgressBar from '../components/ProgressBar';
@@ -25,6 +27,19 @@ import {
   PriorityIcon
 } from '../Icons/AllIcons';
 
+storiesOf('App', module)
+  .add('First screen', () => <App
+    procName={'Test Process Name'}
+    procDescription={'Description of this test process'}
+    assigned={false}
+    priority={0}
+    workers={0}
+    timeRemaining={'0'}
+    details={false}
+    avgTime={'0'}
+    tasksTotal={0}
+    tasksQueue={0}
+  />);
 
 storiesOf('ONavBar', module)
   .add('displays ok', () => <ONavBar />);
