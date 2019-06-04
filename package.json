@@ -22,7 +22,7 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-local": "build-storybook -c .storybook -o .out",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages -- --existing-output-dir=.out"
   },
   "eslintConfig": {
     "extends": "react-app"

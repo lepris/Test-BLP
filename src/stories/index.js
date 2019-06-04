@@ -27,7 +27,7 @@ import {
 
 
 storiesOf('ONavBar', module)
-  .add('displys ok', () => <ONavBar />);
+  .add('displays ok', () => <ONavBar />);
 
 storiesOf('OTaskCard', module)
   .add('not assigned', () => <OTaskCard
