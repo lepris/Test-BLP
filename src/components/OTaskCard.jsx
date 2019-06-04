@@ -39,21 +39,18 @@ class TaskCard extends Component {
                             ? details
                                 ? <div className='details-bar-bar teal-border'>
                                     <ToggleIcon />
-
                                     <div className='progress-blur' >
-                                        <table>
+                                        <table style={{ 'margin-left': '50px' }}>
                                             <tr>
-                                                <td><span><strong>Tasks in queque:  </strong>{tasksQueue}</span></td>
-                                                <td><span><strong>Average time:  </strong>{avgTime}</span></td>
+                                                <td width='200px' ><span>Tasks in queque:  <strong>{tasksQueue}</strong></span></td>
+                                                <td><span>Average time:  <strong>{avgTime}</strong></span></td>
                                             </tr>
                                             <tr>
-                                                <td><span><strong>Total tasks:  </strong>{tasksTotal}</span></td>
-                                                <td><span><strong>Time remaining:  </strong>{timeRemaining}</span></td>
+                                                <td width='200px'><span>Total tasks:  <strong>{tasksTotal}</strong></span></td>
+                                                <td><span>Time remaining:  <strong>{timeRemaining}</strong></span></td>
                                             </tr>
                                         </table>
-
                                     </div>
-
                                 </div>
                                 : <div className='details-bar-bar teal-border'><ToggleIcon /> <ProgressBar tasksTotal={tasksTotal} tasksQueue={tasksQueue} /></div>
                             : null
