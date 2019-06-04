@@ -4,6 +4,7 @@ import SvgMenu from './Menu';
 import SvgToggle from './Toggle';
 import SvgRefresh from './Refresh';
 import SvgAssignProcess from './AssignProcess';
+import SvgPauseProcess from './PauseProcess';
 import SvgIncreaseRb from './IncreaseRb';
 import SvgDecreaseRb from './DecreaseRb';
 import SvgPlay from './Play';
@@ -20,6 +21,8 @@ export const MenuIcon = () => <SvgMenu />
 export const ToggleIcon = () => <SvgToggle />
 export const RefreshIcon = () => <SvgRefresh />
 export const AssignProcessIcon = () => <SvgAssignProcess />
+export const PauseProcessIcon = () => <SvgPauseProcess />
+
 export const IncreaseRbIcon = () => <SvgIncreaseRb />
 export const DecreaseRbIcon = () => <SvgDecreaseRb />
 export const PlayIcon = () => <SvgPlay />

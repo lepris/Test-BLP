@@ -14,6 +14,7 @@ import {
   ToggleIcon,
   RefreshIcon,
   AssignProcessIcon,
+  PauseProcessIcon,
   IncreaseRbIcon,
   DecreaseRbIcon,
   PlayIcon,
@@ -38,18 +39,13 @@ storiesOf('Priority Icon priority of props', module)
 storiesOf('All Icons', module)
   .add('menu icon displays ok', () => (
     <>
-      <MenuIcon /><br></br>
-      <RefreshIcon /><br></br>
-      <ToggleIcon /><br></br>
+      <MenuIcon /><RefreshIcon /><ToggleIcon /><PauseProcessIcon /><br></br>
       <AssignProcessIcon /><br></br>
-      <IncreaseRbIcon /><br></br>
-      <DecreaseRbIcon /><br></br>
+      <IncreaseRbIcon /><DecreaseRbIcon /><br></br>
       <PlayIcon /><br></br>
-      <StarOnIcon /><br></br>
-      <StarOffIcon /><br></br>
+      <StarOnIcon /><StarOffIcon /><br></br>
       <LookingGlassIcon /><br></br>
-      <DropMenuBlIcon /><br></br>
-      <DropMenuWhtIcon /><br></br>
+      <DropMenuBlIcon /> <DropMenuWhtIcon /><br></br>
 
     </>
 
