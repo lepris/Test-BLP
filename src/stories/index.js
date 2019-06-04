@@ -42,7 +42,7 @@ storiesOf('App', module)
   />);
 
 storiesOf('ONavBar', module)
-  .add('displays ok?', () => <ONavBar />);
+  .add('displays ok', () => <ONavBar />);
 
 storiesOf('OTaskCard', module)
   .add('not assigned', () => <OTaskCard

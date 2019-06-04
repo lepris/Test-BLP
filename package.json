@@ -22,7 +22,7 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "deploy-storybook": "storybook-to-ghpages",
-    "build-and-deply-storybook": "build-storybook; yarn deploy-storybook --existing-output-dir=.out"
+    "build-and-deploy-storybook": "yarn build-storybook && yarn deploy-storybook --existing-output-dir=.out"
   },
   "eslintConfig": {
     "extends": "react-app"
