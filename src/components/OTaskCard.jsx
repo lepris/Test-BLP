@@ -37,7 +37,14 @@ class TaskCard extends Component {
                     <div className='details-wrapper pink-border'>
                         {assigned
                             ? details
-                                ? <span><ToggleIcon />{`detailed info ${tasksQueue} ${tasksTotal} ${avgTime} ${timeRemaining}`}</span>
+                                ? <div className='details-bar-bar teal-border'>
+                                    <ToggleIcon />{`detailed info ${tasksQueue} ${tasksTotal} ${avgTime} ${timeRemaining}`}
+
+                                    <div className='progress-blur' >
+                                        <ProgressBar tasksTotal={tasksTotal} tasksQueue={tasksQueue} />
+                                    </div>
+
+                                </div>
                                 : <div className='details-bar-bar teal-border'><ToggleIcon /> <ProgressBar tasksTotal={tasksTotal} tasksQueue={tasksQueue} /></div>
                             : null
                         }
