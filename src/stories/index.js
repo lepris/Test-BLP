@@ -21,7 +21,8 @@ import {
   StarOnIcon,
   LookingGlassIcon,
   DropMenuBlIcon,
-  DropMenuWhtIcon
+  DropMenuWhtIcon,
+  PriorityIcon
 } from '../Icons/AllIcons';
 
 
@@ -29,33 +30,37 @@ import {
 
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
-
+storiesOf('Priority Icon priority of props', module)
+  .add('task priority of 0', () => <PriorityIcon priority={0} />)
+  .add('task priority of 1', () => <PriorityIcon priority={1} />)
+  .add('task priority of 2', () => <PriorityIcon priority={2} />)
+  .add('task priority of 3', () => <PriorityIcon priority={3} />)
 storiesOf('All Icons', module)
   .add('menu icon displays ok', () => (
     <>
-    <MenuIcon /><br></br>
-    <RefreshIcon /><br></br>
-    <ToggleIcon /><br></br>
-    <AssignProcessIcon /><br></br>
-    <IncreaseRbIcon /><br></br>
-    <DecreaseRbIcon /><br></br>
-    <PlayIcon /><br></br>
-    <StarOnIcon /><br></br>
-    <StarOffIcon /><br></br>
-    <LookingGlassIcon /><br></br>
-    <DropMenuBlIcon /><br></br>
-    <DropMenuWhtIcon /><br></br>
+      <MenuIcon /><br></br>
+      <RefreshIcon /><br></br>
+      <ToggleIcon /><br></br>
+      <AssignProcessIcon /><br></br>
+      <IncreaseRbIcon /><br></br>
+      <DecreaseRbIcon /><br></br>
+      <PlayIcon /><br></br>
+      <StarOnIcon /><br></br>
+      <StarOffIcon /><br></br>
+      <LookingGlassIcon /><br></br>
+      <DropMenuBlIcon /><br></br>
+      <DropMenuWhtIcon /><br></br>
 
     </>
 
   ))
 
 
-storiesOf('ONavBar',module)
-    .add('displys ok', () => <ONavBar/>);
+storiesOf('ONavBar', module)
+  .add('displys ok', () => <ONavBar />);
 
-storiesOf('OTaskCard',module)
-  .add('not assigned', () => <OTaskCard 
+storiesOf('OTaskCard', module)
+  .add('not assigned', () => <OTaskCard
     procName={'Test Process Name'}
     procDescription={'Description of this test process'}
     assigned={false}
@@ -67,7 +72,7 @@ storiesOf('OTaskCard',module)
     tasksQueue={0}
 
   />)
-  .add('Assigned priority 1', () => <OTaskCard 
+  .add('Assigned priority 1', () => <OTaskCard
     procName={'Test Process Name'}
     procDescription={'Description of this test process'}
     assigned={true}
@@ -77,7 +82,7 @@ storiesOf('OTaskCard',module)
     avgTime={'12s'}
     tasksTotal={10}
     tasksQueue={6}
-    
+
   />);
 
 storiesOf('Button', module)
