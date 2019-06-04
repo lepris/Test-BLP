@@ -20,9 +20,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "build-storybook-local": "build-storybook -c .storybook -o .out",
-    "deploy-storybook": "storybook-to-ghpages -- --existing-output-dir=.out"
+    "build-storybook-local": "build-storybook -c .storybook -s public -o out",
+    "build-storybook": "build-storybook -c .storybook -o out",
+    "deploy-storybook": "storybook-to-ghpages",
+    "deploy-built-storybook": "deploy-storybook -- --existing-output-dir=.out"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,5 +50,10 @@
     "@storybook/storybook-deployer": "^2.8.1",
     "@svgr/cli": "^4.3.0",
     "babel-loader": "8.0.5"
+  },
+  "storybook-deployer": {
+    "gitUsername": "Lepris",
+    "gitEmail": "karolina.jankowska@gmail.com",
+    "commitMessage": "Deploy Storybook"
   }
 }
