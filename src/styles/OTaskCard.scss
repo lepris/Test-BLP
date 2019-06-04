@@ -1,7 +1,7 @@
 @import "./_theme";
 
 .task-card-wrapper {
-    background-image: url('../ghost_screens/Organism/tc_never_assigned.jpg');
+    // background-image: url('../ghost_screens/Organism/tc_never_assigned.jpg');
     background-color: rgba(255,255,255, .2);
     background-repeat: no-repeat;
     
@@ -21,6 +21,7 @@
  padding: 5px 0px 0px 15px;
  display: flex;
  flex-direction: column;
+ flex-grow: 1;
  justify-content: flex-start;
 }
 .process-name {
@@ -71,6 +72,25 @@
     font-weight: 600; 
     font-size: 1.3em;
     
+}
+
+.assigned-status-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    background-color: $prism-dark;
+    border-radius: 0px 0px 10px 0px;
+}
+.assigned-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    color: $text-white;
+    font-size: 1.2em;
 }
 
 

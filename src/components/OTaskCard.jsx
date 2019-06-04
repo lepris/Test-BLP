@@ -6,6 +6,9 @@ import {
     DecreaseRbIcon,
     PlayIcon,
     PriorityIcon,
+    AssignProcessIcon,
+    PauseProcessIcon,
+    ToggleIcon,
 } from '../Icons/AllIcons';
 
 class TaskCard extends Component {
@@ -16,8 +19,9 @@ class TaskCard extends Component {
             procName,
             procDescription,
             assigned,
-            // priority,
+            priority,
             workers,
+            details,
             timeRemaining,
             avgTime,
             tasksTotal,
@@ -29,11 +33,21 @@ class TaskCard extends Component {
                     <label className=' process-name-label label-text text-inner-shadow'>Name</label>
                     <h3 className='process-name '>{procName}</h3>
                     <span>{procDescription}</span>
-
+                    {assigned
+                        ? details
+                            ? <span><ToggleIcon />{`detailed info ${tasksQueue} ${tasksTotal} ${avgTime} ${timeRemaining}`}</span>
+                            : <span><ToggleIcon /> progress bar</span>
+                        : null
+                    }
                 </div>
+
+
                 <div className='task-second-column pink-border'>
-                    <div className='play-pause'>
-                        <PlayIcon assigned={assigned} />
+                    <div className='play-pause pink-border'>
+                        {assigned
+                            ? <PauseProcessIcon />
+                            : <PlayIcon />
+                        }
                     </div>
                     <h4 className='workers-assigned'>Workers assigned</h4>
 
@@ -48,7 +62,13 @@ class TaskCard extends Component {
                             <IncreaseRbIcon />
                         </div>
                     </div>
-                    <PriorityIcon priority={0} />
+                    <PriorityIcon priority={priority} />
+                    <div className='assigned-status-wrapper'>
+                        {assigned
+                            ? <span className='assigned-bar'><AssignProcessIcon />Running</span>
+                            : <span className='assigned-bar'><AssignProcessIcon />Unassigned</span>
+                        }
+                    </div>
 
 
                 </div>
