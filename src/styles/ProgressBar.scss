@@ -1,0 +1,32 @@
+@import "./_theme";
+
+.current-progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: $prism-dark;
+    border-radius: 4px 4px 10px 4px;
+
+    
+    color: $prism-light;
+    text-align: right;
+}
+.percentage-span {
+    margin-right: 5px;
+}
+.hundred-bg {
+    width: 466px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: $prism-light;
+    border-radius: 4px 4px 10px 4px;
+}
+.outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+    color: $prism-dark;
+}
