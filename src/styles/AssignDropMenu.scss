@@ -1,25 +1,59 @@
 @import "./_theme";
 
-.drop-menu-wrapper{
-    
-    width: 256px;
-    // height: 120px;
-    // padding: 0% 25% 0% 25%;
+.drop-menu-wrapper {
     display: flex;
+    width: 256px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
-    background-image: url('../Icons/Menu.js');
+    overflow: hidden;
+
+    
+   
+
+}
+.first {
+    padding-top: 10px; 
+    background-image: url('../../svg/drop_menu_bl.svg');
+    background-repeat: no-repeat;
+
+    color: $text-white;
+}
+.border-left-right {
     border-left: $prism-dark solid 1px;
     border-right: $prism-dark solid 1px;
-    border-bottom: $prism-dark solid 1px;
-
 }
 
 .drop-menu-item {
+    font-size: 1.4em;
+    height:43px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+    border-bottom: $prism-dark solid 1px;
     
 }
+.last{
+    border-left: $prism-dark solid 1px;
+    border-right: $prism-dark solid 1px;
+    border-bottom: $prism-dark solid 1px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.clickable {
+    color: $prism-dark;
+}
+.clickable:hover{
+    cursor: pointer;
+    color: $text-white;
+    background-color: $prism-dark;
+    text-shadow: $text-outer-glow
+}
+.clickable:active{
+    cursor: pointer;
+    color: $prism-dark;
+    background-color: $prism-light;
+    text-shadow: $text-outer-glow
+}
+

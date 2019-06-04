@@ -38,6 +38,7 @@ color: $text-lgrey;
 font-size: 15px;
 text-align: left;
 }
+
 .text-inner-shadow {
     background-color: #565656;
     color: transparent;
@@ -47,6 +48,13 @@ text-align: left;
           background-clip: text;
 
 }
+
+//Outerglow for hover actions
+   
+$text-outer-glow: 0px 2px 3px rgba(255,255,255,0.5);
+
+
+
 
 //Global shadow
 .frame-box-shadow {
