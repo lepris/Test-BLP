@@ -39,10 +39,10 @@ storiesOf('Priority Icon priority of props', module)
 storiesOf('All Icons', module)
   .add('menu icon displays ok', () => (
     <>
-      <MenuIcon /><RefreshIcon /><ToggleIcon /><PauseProcessIcon /><br></br>
+      <MenuIcon /><RefreshIcon /><ToggleIcon /><PlayIcon /><PauseProcessIcon /><br></br>
       <AssignProcessIcon /><br></br>
       <IncreaseRbIcon /><DecreaseRbIcon /><br></br>
-      <PlayIcon /><br></br>
+      <br></br>
       <StarOnIcon /><StarOffIcon /><br></br>
       <LookingGlassIcon /><br></br>
       <DropMenuBlIcon /> <DropMenuWhtIcon /><br></br>
@@ -63,6 +63,7 @@ storiesOf('OTaskCard', module)
     priority={0}
     workers={0}
     timeRemaining={'0'}
+    details={false}
     avgTime={'0'}
     tasksTotal={0}
     tasksQueue={0}
@@ -72,6 +73,20 @@ storiesOf('OTaskCard', module)
     procName={'Test Process Name'}
     procDescription={'Description of this test process'}
     assigned={true}
+    details={false}
+    priority={1}
+    workers={10}
+    timeRemaining={'01:24'}
+    avgTime={'12s'}
+    tasksTotal={10}
+    tasksQueue={6}
+
+  />)
+  .add('Details Assigned priority 1', () => <OTaskCard
+    procName={'Test Process Name'}
+    procDescription={'Description of this test process'}
+    assigned={true}
+    details={true}
     priority={1}
     workers={10}
     timeRemaining={'01:24'}
