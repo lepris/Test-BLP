@@ -14,12 +14,13 @@
   "scripts": {
     "svgr": "svgr -d src/Icons/ svg/",
     "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "watch-css": "yarn build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
+    "prebuild-storybook": "yarn build-css",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "deploy-storybook": "storybook-to-ghpages",
     "build-and-deploy-storybook": "yarn build-storybook && yarn deploy-storybook --existing-output-dir=.out"
