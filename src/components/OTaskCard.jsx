@@ -24,6 +24,7 @@ class TaskCard extends Component {
         showAssignMenu: false
     }
 
+
     showDetails = (e) => {
         e.preventDefault();
         this.setState({ details: true })
@@ -54,6 +55,7 @@ class TaskCard extends Component {
         e.preventDefault();
         const { setActive, procId } = this.props;
         setActive(procId);
+
     }
     handleStopActive = (e) => {
         e.preventDefault();
@@ -74,6 +76,7 @@ class TaskCard extends Component {
         const { minusWorker, procId, workers } = this.props;
         minusWorker(procId, workers);
     }
+
 
 
     render() {

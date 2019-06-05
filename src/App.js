@@ -90,21 +90,14 @@ class App extends Component {
   }
 
 
-
-
   render() {
-    let { processes, runningProcesses } = this.state;
+    let { processes } = this.state;
 
 
     return (
 
       <div className='App' >
-
-
         <ONavBar />
-
-
-        <h2>{runningProcesses}</h2>
         <div className='middle'>
           {processes && processes.map(proc =>
             <OTaskCard
@@ -113,11 +106,8 @@ class App extends Component {
               setActive={this.setActive}
               addWorker={this.addWorker}
               minusWorker={this.minusWorker}
+              setWorkProgress={this.setWorkProgress}
               key={proc.procId} {...proc} />)}
-
-
-
-
         </div>
 
 
