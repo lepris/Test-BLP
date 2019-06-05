@@ -25,12 +25,12 @@ class App extends Component {
     this.setState({ processes: tempProcess })
   }
   setTaskPriority = (newPriority, processId) => {
-    console.log('app set priority', newPriority, processId)
+
     const { processes } = this.state;
     let tempProcess = processes.map(proc =>
       proc.procId === processId ? { ...proc, priority: +newPriority } : proc
     )
-    console.log(tempProcess)
+
     this.setState({ processes: tempProcess })
   }
 

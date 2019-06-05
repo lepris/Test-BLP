@@ -5,10 +5,10 @@ import '../styles/OTaskCard.css'
 import {
     IncreaseRbIcon,
     DecreaseRbIcon,
-    PlayIcon,
+
     PriorityIcon,
     AssignProcessIcon,
-    PauseProcessIcon,
+
     ToggleIcon,
 } from '../Icons/AllIcons';
 import SetPriorityDropMenu from '../components/SetPriorityDropMenu';
@@ -46,6 +46,7 @@ class TaskCard extends Component {
     }
     hideAssignMenu = (e) => {
         e.preventDefault();
+        this.handleSetActive(e);
         this.setState({ showAssignMenu: false })
     }
 
@@ -76,9 +77,9 @@ class TaskCard extends Component {
             avgTime,
             tasksTotal,
             tasksQueue,
-            setActive
+
         } = this.props;
-        console.log(priority)
+
         return (
             <div className='task-card-wrapper frame-box-shadow'>
                 {assigned
