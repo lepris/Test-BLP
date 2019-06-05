@@ -12,6 +12,8 @@ import {
     ToggleIcon,
 } from '../Icons/AllIcons';
 import SetPriorityDropMenu from '../components/SetPriorityDropMenu';
+import AssignDropMenu from '../components/AssignDropMenu';
+
 import ProgressBar from '../components/ProgressBar';
 
 class TaskCard extends Component {
@@ -19,6 +21,7 @@ class TaskCard extends Component {
     state = {
         details: false,
         showPriorityMenu: false,
+        showAssignMenu: false
 
     }
     showDetails = (e) => {
@@ -37,6 +40,14 @@ class TaskCard extends Component {
         e.preventDefault();
         this.setState({ showPriorityMenu: false })
     }
+    showAssignMenu = (e) => {
+        e.preventDefault();
+        this.setState({ showAssignMenu: true })
+    }
+    hideAssignMenu = (e) => {
+        e.preventDefault();
+        this.setState({ showAssignMenu: false })
+    }
 
     handleSetActive = (e) => {
         e.preventDefault();
@@ -52,7 +63,7 @@ class TaskCard extends Component {
 
 
     render() {
-        let { details, showPriorityMenu } = this.state;
+        let { details, showPriorityMenu, showAssignMenu } = this.state;
         const {
             setTaskPriority,
             procId,
@@ -76,7 +87,10 @@ class TaskCard extends Component {
                             <SetPriorityDropMenu procId={procId} hidePriorityMenu={this.hidePriorityMenu} setTaskPriority={setTaskPriority} priority={priority} />
                         </div>) : null
 
-                    : null
+                    : showAssignMenu
+                        ? (<div className='set-priority-menu' onClick={this.hideAssignMenu} onBlur={this.hideAssignMenu}>
+                            <AssignDropMenu procId={procId} hideAssignMenu={this.hideAssignMenu} setTaskPriority={setTaskPriority} />
+                        </div>) : null
                 }
                 <div className='task-first-column '>
                     <label className=' process-name-label label-text text-inner-shadow'>Name</label>
@@ -133,7 +147,7 @@ class TaskCard extends Component {
                     <div className='assigned-status-wrapper'>
                         {assigned
                             ? <span className='assigned-bar'><AssignProcessIcon />Running</span>
-                            : <span className='assigned-bar' onClick={this.showPriorityMenu}><AssignProcessIcon />
+                            : <span className='assigned-bar' onClick={this.showAssignMenu}><AssignProcessIcon />
 
                                 Unassigned
                             </span>
