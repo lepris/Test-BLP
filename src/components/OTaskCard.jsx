@@ -70,9 +70,14 @@ class TaskCard extends Component {
         console.log(priority)
         return (
             <div className='task-card-wrapper frame-box-shadow'>
-                {showPriorityMenu && <div className='set-priority-menu' onClick={this.hidePriorityMenu}>
-                    <SetPriorityDropMenu procId={procId} setTaskPriority={setTaskPriority} priority={priority} />
-                </div>}
+                {assigned
+                    ? showPriorityMenu
+                        ? (<div className='set-priority-menu' onClick={this.hidePriorityMenu} onBlur={this.hidePriorityMenu}>
+                            <SetPriorityDropMenu procId={procId} hidePriorityMenu={this.hidePriorityMenu} setTaskPriority={setTaskPriority} priority={priority} />
+                        </div>) : null
+
+                    : null
+                }
                 <div className='task-first-column '>
                     <label className=' process-name-label label-text text-inner-shadow'>Name</label>
                     <h3 className='process-name '>{procName}</h3>
