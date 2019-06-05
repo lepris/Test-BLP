@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 import React from 'react';
 import '../styles/AssignDropMenu.css'
 const AssignDropMenu = () => (
@@ -21,6 +21,6 @@ const AssignDropMenu = () => (
 
 );
 
-AssignDropMenu.propTypes = {};
+
 
 export default AssignDropMenu;
