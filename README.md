@@ -9,4 +9,7 @@ For this project I have chosen to learn and try a new toy **Storybook**. It was 
  
 **[https://lepris.github.io/Test-BLP/](https://lepris.github.io/Test-BLP/)**
 
- 
+### Biggest benefits: 
+1. Ability to set and test all different sets of props
+2. Immediate access to deeply nested components
+3. Quick deployment
