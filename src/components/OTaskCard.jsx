@@ -22,8 +22,8 @@ class TaskCard extends Component {
         details: false,
         showPriorityMenu: false,
         showAssignMenu: false
-
     }
+
     showDetails = (e) => {
         e.preventDefault();
         this.setState({ details: true })
@@ -58,8 +58,21 @@ class TaskCard extends Component {
     handleStopActive = (e) => {
         e.preventDefault();
 
-        const { stopActive, procId } = this.props;
-        stopActive(procId);
+        const { stopActive, procId, workers } = this.props;
+        stopActive(procId, workers);
+    }
+
+    handleAddWorker = (e) => {
+        e.preventDefault();
+
+        const { addWorker, procId, workers } = this.props;
+        addWorker(procId, workers);
+    }
+    handleMinusWorker = (e) => {
+        e.preventDefault();
+
+        const { minusWorker, procId, workers } = this.props;
+        minusWorker(procId, workers);
     }
 
 
@@ -134,15 +147,17 @@ class TaskCard extends Component {
                     <h4 className='workers-assigned'>Workers assigned</h4>
 
                     <div className='workers-wrapper '>
-                        <div className='plus-minus '>
+                        {workers > 0 && <div className='plus-minus ' onClick={this.handleMinusWorker}>
                             <DecreaseRbIcon />
                         </div>
+
+                        }
                         <span className='workers-number '>
                             {workers}/25
                         </span>
-                        <div className='plus-minus '>
+                        {workers > 0 && <div className='plus-minus ' onClick={this.handleAddWorker}>
                             <IncreaseRbIcon />
-                        </div>
+                        </div>}
                     </div>
                     <button onClick={this.showPriorityMenu} className='show-priority-button'> <PriorityIcon priority={priority} /></button>
                     <div className='assigned-status-wrapper'>
