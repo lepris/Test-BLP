@@ -1,0 +1,57 @@
+
+<svg width="37px" height="36px" viewBox="0 0 37 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="path-1" cx="18" cy="18" r="18"></circle>
+        <circle id="path-3" cx="18" cy="18" r="18"></circle>
+        <polygon id="path-5" points="8.18 0.52 15.56 13.48 0.8 13.48"></polygon>
+        <path d="M18,36 C8.0588745,36 0,27.9411255 0,18 C0,8.0588745 8.0588745,0 18,0 C27.9411255,0 36,8.0588745 36,18 C36,27.9411255 27.9411255,36 18,36 Z M18,35.027027 C27.4037674,35.027027 35.027027,27.4037674 35.027027,18 C35.027027,8.59623264 27.4037674,0.972972973 18,0.972972973 C8.59623264,0.972972973 0.972972973,8.59623264 0.972972973,18 C0.972972973,27.4037674 8.59623264,35.027027 18,35.027027 Z" id="path-7"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(0.000000, -1.000000)">
+            <g transform="translate(18.500000, 19.000000) rotate(-270.000000) translate(-18.500000, -19.000000) translate(0.000000, 1.000000)">
+                <g id="Colour/@prism-paper-Clipped" transform="translate(0.500000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <g id="Colour/@prism-paper" mask="url(#mask-2)" fill="#FFFFFF">
+                        <rect id="Rectangle" x="0" y="0" width="36" height="36"></rect>
+                    </g>
+                </g>
+                <g id="atom/icon/play-Clipped" transform="translate(0.500000, 0.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <g id="atom/icon/play" mask="url(#mask-4)">
+                        <g transform="translate(10.000000, 11.000000)" id="Colour/@prism-charcoal-Clipped">
+                            <g>
+                                <mask id="mask-6" fill="white">
+                                    <use xlink:href="#path-5"></use>
+                                </mask>
+                                <g id="path-3"></g>
+                                <g id="Colour/@prism-charcoal" mask="url(#mask-6)" fill="#434A50">
+                                    <g transform="translate(-10.000000, -11.000000)" id="Rectangle-Copy">
+                                        <rect x="0" y="0" width="36" height="36"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Background" transform="translate(0.500000, 0.000000)" fill="#979797" fill-rule="nonzero">
+                    <path d="M18,36 C8.0588745,36 0,27.9411255 0,18 C0,8.0588745 8.0588745,0 18,0 C27.9411255,0 36,8.0588745 36,18 C36,27.9411255 27.9411255,36 18,36 Z M18,35.027027 C27.4037674,35.027027 35.027027,27.4037674 35.027027,18 C35.027027,8.59623264 27.4037674,0.972972973 18,0.972972973 C8.59623264,0.972972973 0.972972973,8.59623264 0.972972973,18 C0.972972973,27.4037674 8.59623264,35.027027 18,35.027027 Z" id="path-5"></path>
+                </g>
+                <g id="Colour/@prism-charcoal-Clipped" transform="translate(0.500000, 0.000000)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <g id="path-5"></g>
+                    <g id="Colour/@prism-charcoal" mask="url(#mask-8)" fill="#434A50">
+                        <rect id="Rectangle-Copy" x="0" y="0" width="36" height="36"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

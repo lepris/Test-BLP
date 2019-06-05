@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/main.css",
+    "main.js": "/main.976293e270184fb3e332.bundle.js",
+    "main.css.map": "/main.css.map",
+    "main.js.map": "/main.976293e270184fb3e332.bundle.js.map",
+    "runtime~main.js": "/runtime~main.976293e270184fb3e332.bundle.js",
+    "runtime~main.js.map": "/runtime~main.976293e270184fb3e332.bundle.js.map",
+    "vendors~main.js": "/vendors~main.976293e270184fb3e332.bundle.js",
+    "vendors~main.js.map": "/vendors~main.976293e270184fb3e332.bundle.js.map",
+    "iframe.html": "/iframe.html",
+    "precache-manifest.eb97493760a1ce1073bcf5f4a8171574.js": "/precache-manifest.eb97493760a1ce1073bcf5f4a8171574.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/AssignDropMenu.css": "/static/media/drop_menu_bl.68297ebe.svg",
+    "static/media/SetPriorityDropMenu.css": "/static/media/star_big_on.83b6f45f.svg",
+    "static/media/OTaskCard.css": "/static/media/play.651b95f9.svg"
+  }
+}
