@@ -52,8 +52,11 @@ text-align: left;
 //Outerglow for hover actions
    
 $text-outer-glow: 0px 2px 3px rgba(255,255,255,0.5);
-
-
+//opacity change
+@keyframes opacity-animation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 
 
 //Global shadow
