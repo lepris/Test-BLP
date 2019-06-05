@@ -47,6 +47,7 @@ storiesOf('Assign Drop Menu', module)
   .add('Assign drop', () => <AssignDropMenu />);
 
 storiesOf('Set Priority Drop Menu', module)
+  .add('No Priority set drop menu', () => <SetPriorityDropMenu />)
   .add('0 Set Priority drop menu', () => <SetPriorityDropMenu priority={0} />)
   .add('1 Set Priority drop menu', () => <SetPriorityDropMenu priority={1} />)
   .add('2 Set Priority drop menu', () => <SetPriorityDropMenu priority={2} />)
