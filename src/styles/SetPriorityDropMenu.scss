@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;  
+    background-color: white;
 }
 .heading {
     height: 54px;
@@ -16,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../../svg/drop_menu_wht.svg');
+    background-image: url('../svg/drop_menu_wht.svg');
     background-repeat: no-repeat;
     
     color: $prism-prime;
@@ -24,13 +25,10 @@
 
 .animated-text {
     opacity: 1;
-    animation-name: text-animation;
+    animation-name: opacity-animation;
     animation-duration: 2s;
 }
-@keyframes text-animation {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+
 
 .three-star-buttons{
     display: flex;
@@ -41,12 +39,13 @@
     border-right: $prism-dark solid 1px;
     border-bottom: $prism-dark solid 1px;
     border-radius: 0px 0px 10px 10px;
+   
 }
 
 .star-button {
     width: 72px;
     height: 72px;
-    background-image: url('../../svg/star_big_off.svg');
+    background-image: url('../svg/star_big_off.svg');
     background-size: cover;
 
     display: flex;
@@ -62,7 +61,7 @@
 }
 
 .star-button:hover {
-    background-image: url('../../svg/star_big_on.svg');
+    background-image: url('../svg/star_big_on.svg');
     color: $prism-dark;
     text-shadow: $text-outer-glow;
     transition-timing-function: ease-in;
@@ -75,6 +74,6 @@
 }
 
 .bg-star-active{
-    background-image: url('../../svg/star_big_on.svg');
+    background-image: url('../svg/star_big_on.svg');
     
 }

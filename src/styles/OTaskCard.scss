@@ -45,9 +45,25 @@
 }
 .play-pause {
     position: absolute;
-    z-index: -3;
+    // z-index: -3;
     margin-top: 46px;
     margin-left: -19px;
+}
+.task-play-icon {
+    display:flex;
+    width: 36px;
+    height: 36px;
+    background-image: url('../svg/play.svg');
+    border: none;
+    background-color: transparent;
+}
+.task-stop-icon {
+    display:flex;
+    width: 36px;
+    height: 36px;
+    background-image: url('../svg/pause_process.svg');
+    border: none;
+    background-color: transparent;
 }
 
 .workers-assigned {
@@ -83,6 +99,8 @@
 
     background-color: $prism-dark;
     border-radius: 0px 0px 10px 0px;
+
+    
 }
 .assigned-bar {
     display: flex;
@@ -91,7 +109,23 @@
 
     color: $text-white;
     font-size: 1.2em;
+
+    opacity: 1;
+    animation-name: opacity-animation;
+    animation-duration: 2s;
 }
+.show-priority-button {
+    border: none;
+    background-color: transparent;
+}
+.set-priority-menu {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 136px;
+    z-index: 5;
+}
+
+
 
 .details-wrapper {
     display: flex;
@@ -106,6 +140,11 @@
     justify-content: flex-start;
     align-items: center;
    margin-bottom: 5px;
+   
+   opacity: 1;
+    animation-name: opacity-animation;
+    animation-duration: 2s;
+
 }
 .progress-blur {
     width: 466px;
