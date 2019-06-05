@@ -20,11 +20,14 @@ For this project, I have chosen to learn and try a new toy **Storybook**. It was
 - addon-info
 
 ## SCSS
-Second tech I have adopted was **SCSS** , which allowed me to define style variables, which could be used around the project: 
+Second tech choice I decided to adopt was **SCSS** , which allowed me to define style variables, which could be used around the project: 
 
 - Consistent colour guide for text and, borders and backgrounds
 - Animated opacity transition
 - Reusable shadows  
 
 ## SVG
-Another great feature was importing **SVG** elements directly from **SKETCH** and using **SVGR** for generating **React** components. 
+Another great feature was importing **SVG** elements directly from **SKETCH** and using **SVGR** for generating **React** components. This solution gave me the possibility to achieve pixel-perfect icons and matching colours. 
+
+#SUMMARY
+Having tried all these nice tools in action, I am 100% convinced to follow the Storybook Driven Development path. Regretfully time constraints didn't allow to learn to test with this great platform, but I am sure it is well worth giving a go.  Developing UX Design was never so much fun before.
