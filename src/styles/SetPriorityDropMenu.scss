@@ -53,6 +53,8 @@
     justify-content: center;
     align-items: center;
     color: $text-dgrey;
+    font-size: .7em;
+    letter-spacing: 0px;
 
     border: none;
     background-color: transparent;
@@ -68,11 +70,7 @@
     -webkit-transition-timing-function: ease-in;
 }
 
-.priority-indicator{
-    font-size: .7em;
-    letter-spacing: 0px;
-    display: block;
-}
+
 
 .bg-star-active{
     background-image: url('../svg/star_big_on.svg');
