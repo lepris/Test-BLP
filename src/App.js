@@ -18,7 +18,7 @@ class App extends Component {
 
 
         <div className='middle'>
-          {tasks.map(task => <OTaskCard procName={task} procDescription={'This test Description'} />)}
+          {tasks.map(task => <OTaskCard />)}
 
 
 

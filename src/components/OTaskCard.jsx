@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import '../styles/OTaskCard.css'
 
 import {
@@ -14,7 +15,10 @@ import ProgressBar from '../components/ProgressBar';
 
 class TaskCard extends Component {
 
-    state = {}
+    state = {
+        showAssignMenu: false,
+        showPriorityMenu: false
+    }
     render() {
         const {
             procName,
@@ -30,14 +34,14 @@ class TaskCard extends Component {
         } = this.props;
         return (
             <div className='task-card-wrapper frame-box-shadow'>
-                <div className='task-first-column teal-border'>
+                <div className='task-first-column '>
                     <label className=' process-name-label label-text text-inner-shadow'>Name</label>
                     <h3 className='process-name '>{procName}</h3>
                     <span>{procDescription}</span>
-                    <div className='details-wrapper pink-border'>
+                    <div className='details-wrapper '>
                         {assigned
                             ? details
-                                ? <div className='details-bar-bar teal-border'>
+                                ? <div className='details-bar-bar '>
                                     <ToggleIcon />
                                     <div className='progress-blur' >
                                         <table style={{ 'margin-left': '50px' }}>
@@ -52,15 +56,15 @@ class TaskCard extends Component {
                                         </table>
                                     </div>
                                 </div>
-                                : <div className='details-bar-bar teal-border'><ToggleIcon /> <ProgressBar tasksTotal={tasksTotal} tasksQueue={tasksQueue} /></div>
+                                : <div className='details-bar-bar '><ToggleIcon /> <ProgressBar tasksTotal={tasksTotal} tasksQueue={tasksQueue} /></div>
                             : null
                         }
                     </div>
                 </div>
 
 
-                <div className='task-second-column pink-border'>
-                    <div className='play-pause pink-border'>
+                <div className='task-second-column '>
+                    <div className='play-pause '>
                         {assigned
                             ? <PauseProcessIcon />
                             : <PlayIcon />
@@ -68,14 +72,14 @@ class TaskCard extends Component {
                     </div>
                     <h4 className='workers-assigned'>Workers assigned</h4>
 
-                    <div className='workers-wrapper pink-border'>
-                        <div className='plus-minus teal-border'>
+                    <div className='workers-wrapper '>
+                        <div className='plus-minus '>
                             <DecreaseRbIcon />
                         </div>
-                        <span className='workers-number orange-border'>
+                        <span className='workers-number '>
                             {workers}/25
                         </span>
-                        <div className='plus-minus teal-border'>
+                        <div className='plus-minus '>
                             <IncreaseRbIcon />
                         </div>
                     </div>
@@ -93,5 +97,28 @@ class TaskCard extends Component {
         );
     }
 }
-
+TaskCard.propTypes = {
+    procName: PropTypes.string,
+    procDescription: PropTypes.string,
+    assigned: PropTypes.bool,
+    priority: PropTypes.number,
+    workers: PropTypes.number,
+    details: PropTypes.bool,
+    timeRemaining: PropTypes.string,
+    avgTime: PropTypes.string,
+    tasksTotal: PropTypes.number,
+    tasksQueue: PropTypes.number,
+}
+TaskCard.defaultProps = {
+    procName: 'This Default test name of a process',
+    procDescription: 'A very temporary description of a process',
+    assigned: false,
+    priority: 0,
+    workers: 0,
+    details: false,
+    timeRemaining: '2h',
+    avgTime: '10m',
+    tasksTotal: 66,
+    tasksQueue: 66,
+}
 export default TaskCard;
